@@ -16,8 +16,8 @@ app.use('/register', Register)
 
 app.get('/:id' , (req, res) => {
     const urlId = req.params.id
-    console.log(req.ip)
-    res.send(req.ip)
+    let ipadd = req.headers['x-forwarded-for'] || req.headers['x-forwarded'] || req.socket.remoteAddress
+    res.send(ipadd)
 
 })
 
