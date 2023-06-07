@@ -17,8 +17,6 @@ app.use('/register', Register)
 app.get('/:id' , (req, res) => {
     const urlId = req.params.id
     console.log(req.ip)
-    const nav = new Navigator()
-    nav.geolocation.getCurrentPosition(req.socket.remoteAddress)
     res.send(req.ip)
 
 })
