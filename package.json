@@ -23,5 +23,8 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.32.0"
   },
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "18.x"
+  }
 }
